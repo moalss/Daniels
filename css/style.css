@@ -1,0 +1,482 @@
+/*!  Start shared Styles*/
+* {
+    box-shadow: none !important; 
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.padding-block-100{
+    padding:100px 0px ;
+}
+body, html{
+    scroll-padding-top: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-top h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    font-weight: 900;
+    display: inline-block;
+
+}
+
+ .title-top h2::after {
+    position: absolute;
+    bottom: 0;
+
+    right: 0%;
+    content: "";
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+    width: 100%;
+    height: 21px;
+}
+
+/*!  End shared Styles*/
+
+
+/*^  Start Navbar Styles*/
+
+.navbar{
+    z-index: 999;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::after{
+    width: 55%;
+
+}
+ 
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 14px;
+    padding-inline: 20px;
+}
+
+/*^  End Navbar Styles*/
+
+
+
+
+/*^  Start Header Styles*/
+header {
+    background-image: url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header .layout {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .home-content h2 {
+
+    font-weight: 800;
+    font-size: 3.125rem;
+}
+
+header .home-content p {
+    font-weight: 200;
+    font-size: 3.75rem;
+    color: #FFFFFF;
+    position: relative;
+}
+header .home-content p::after{
+    position: absolute;
+    content: " |";
+    animation: typing 2s 1s infinite alternate;
+}
+@keyframes typing {
+    0%{
+        content: " D|";
+    }
+    12%{
+        content: " De|";
+    }
+    23%{
+        content: " Dev|";
+    }
+    
+    34%{
+        content: " Deve|";
+    }
+    45%{
+        content: " Devel|";
+}
+56%{
+    content: " Develo|";
+}
+67%{
+    content: " Develop|";
+}
+78%{
+    content: " Develope|";
+}
+100%{
+    content: " Developer|";
+}
+
+
+
+
+}
+
+header .home-icons span {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+header .home-icons i {
+    font-size: .8125rem;
+}
+
+
+
+/*^  End Header Styles*/
+
+/*^  Start About Styles*/
+
+.about .about-img {
+    position: relative;
+    width: 85%;
+}
+
+.about .about-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about .about-img::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    bottom: -2.125rem;
+    left: -1.6875rem;
+    background-repeat: repeat;
+    z-index: -1;
+    background-image: url(../imgs/dots.png);
+}
+
+.about .progress {
+    margin-top: 40px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.buttons .bDow {
+    background-color: black;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.buttons .bDow:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.buttons .bCon {
+
+    color: black;
+    transition: 0.5s;
+}
+
+.buttons .bCon:hover {
+    background-color: black;
+    color: white;
+}
+
+/*^  End About Styles*/
+
+/*^  Start Services Styles*/
+.services .card-icon span {
+    background-color: #f4f4f4;
+    width: 70px;
+    height: 70px;
+    transition: background-color 0.5s ;
+}
+.services .card:hover span{
+    background-color: #1C1C1C;
+}
+.services .card-icon span i{
+    font-size: 25px;
+    transition: color 0.5s
+}
+.services .card:hover span i{
+   color: #fff;
+}
+.services .card .card-body h4{
+    font-size:18px;
+    font-weight: 800;
+
+}
+.services .card{
+ 
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1); 
+}
+.services .card .card-cont{
+    margin-bottom: 19px;
+    padding: 19px 18px;
+}
+.services .card .card-body p{
+   font-size: 14px;
+}
+
+/*^  End Services Styles*/
+
+/*^  Start Work Styles*/
+.nav-pills .nav-link.active, .nav-pills .nav-link {
+    border: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: transparent;
+
+}
+
+.nav-pills .nav-link{
+    position: relative;
+}
+.nav-pills .nav-link::after{
+    position: absolute;
+    content: "";
+    left: 12px;
+    bottom: 5px;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.nav-pills .nav-link.active::after{
+    width: 60%; 
+   
+}
+.work .tab-cont{
+    position: relative;
+}
+.work .img-layout{
+    position: absolute;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    top: 7px;
+ opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s;
+    background-color:  rgba(255, 255, 255, 0.95);
+}
+.work  .tab-cont:hover .img-layout{
+opacity: 1;
+transform: translateY(0px);
+}
+.work  .tab-cont .img-layout h6{
+    transition: transform 0.5s;
+    font-size: 12px;
+    font-weight: 700;
+}
+.work  .tab-cont .img-layout:hover  h6{
+    transform: translateY(11px);
+
+}
+.work .tab-cont .img-layout-cont .icons i{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #1C1C1C;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid black;
+}
+.work .tab-cont .img-layout-cont .icons i:hover{
+    color: black;
+    background-color: white;
+}
+
+/*^  End Work Styles*/
+
+/*^  Start Clients Styles*/
+.client .carousel-item{
+    padding-block:70px ;
+}
+.client .carousel-item img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.client .carousel-item p{
+    max-width: 1000px;
+    margin-block: 20px;
+    margin: auto;
+    font-size: 15px;
+  
+}
+.client .carousel-item h6,.client .carousel-item span{
+    font-weight: 600;
+}
+.client .carousel-item span{
+    font-size: 12px;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-inline: 10px;
+    background-color: #e0d6d6fc;
+}
+.carousel-indicators [data-bs-target]:hover,.carousel-indicators [data-bs-target].active{
+    background-color: #869791;
+}
+/*^  End Clients Styles*/
+
+
+
+/*^  Start count Styles*/
+
+/*^  End count Styles*/
+
+
+/*^  Start Team Styles*/
+
+.team .card .img-layout {
+
+inset: 5px;
+/* top: 5px;
+right: 5px;
+bottom: 5px;
+left: 5px; */
+opacity: 0;
+transition: all 0.5s;
+transform:  scale(0.5);
+background-color: rgba(255, 255, 255, 0.95)
+}
+.team .card-contents:hover .img-layout {
+transform: rotateY(180deg) scale(1);
+opacity: 1;
+}
+
+.team .card .card-img img{
+    transition:scale 0.5s ;
+}
+.team .card .card-img:hover img {
+    scale: 1.09 ;
+}
+.team .card .img-layout .icons a{
+    width: 40px ;
+    color: #FFFFFF;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.team .card .img-layout .icons a:hover  {
+  background-color: #fff; 
+  color: #1C1C1C; 
+}
+
+.team .card .img-layout .icons li {
+    padding-inline: 5px;
+    transform: rotateY(180deg)
+}
+.team .card-body{
+    background-color: #5B5B5B;
+}
+.team .card-body h4{
+    font-weight: 500;
+    font-size: 25px;
+}
+.team .card-body h5{
+    font-weight: 700;
+    font-size: 20px;
+}
+/*^  End Team Styles*/
+
+/*^  Start Contact Styles*/
+
+.contact .contact-item a {
+    font-size: 20px;
+    width: 60px ;
+    color: black;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.contact .contact-item a:hover{
+    background-color: black; 
+    color: #F4F4F4;
+}
+.contact .contact-item h6{
+    margin-top: 10px;
+    font-weight:700 ;
+    
+}
+.contact textarea{
+    
+    max-height: 160px;
+    height: 160px;
+    max-width: 100%;
+}
+.contact button{
+    color:white;
+    padding: 10px 40px;
+    
+    background-color: black;
+}
+.contact button:hover{
+    color: black;
+    background-color: #fff;
+}
+
+
+/*^  End Contact Styles*/
+/*^  Start Footer Styles*/
+footer .footer-content p {
+    color: #748182;
+    font-size: 13px;
+}
+/*^  End Footer Styles*/
